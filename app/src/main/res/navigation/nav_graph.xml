@@ -6,9 +6,9 @@
     app:startDestination="@id/fragment_rasp2">
     <fragment
         android:id="@+id/fragment_rasp2"
-        android:name="com.example.dz.screens.Fragment_rasp"
+        android:name="com.example.dz.screens.FragmentHomeworkList"
         android:label="fragment_rasp"
-        tools:layout="@layout/fragment_rasp" >
+        tools:layout="@layout/fragment_homework_list" >
         <action
             android:id="@+id/action_fragment_rasp2_to_fragmentAdminPassword"
             app:destination="@id/fragmentAdminPassword" />
@@ -17,31 +17,22 @@
             app:destination="@id/fragmentBigHomeWork" />
     </fragment>
     <fragment
-        android:id="@+id/fragment_category_admin"
-        android:name="com.example.dz.screens.Fragment_category_admin"
-        android:label="fragment_category_admin"
-        tools:layout="@layout/fragment_category_admin" >
+        android:id="@+id/fragmentAdminPassword"
+        android:name="com.example.dz.screens.FragmentAdminAuth"
+        android:label="fragment_admin_password"
+        tools:layout="@layout/fragment_admin_auth" >
         <action
-            android:id="@+id/action_fragment_category_admin_to_fragmentAdminDoHomeWork"
+            android:id="@+id/action_fragmentAdminPassword_to_fragmentAdminDoHomeWork"
             app:destination="@id/fragmentAdminDoHomeWork" />
     </fragment>
     <fragment
-        android:id="@+id/fragmentAdminPassword"
-        android:name="com.example.dz.screens.FragmentAdminPassword"
-        android:label="fragment_admin_password"
-        tools:layout="@layout/fragment_admin_password" >
-        <action
-            android:id="@+id/action_fragmentAdminPassword_to_fragment_category_admin2"
-            app:destination="@id/fragment_category_admin" />
-    </fragment>
-    <fragment
         android:id="@+id/fragmentBigHomeWork"
-        android:name="com.example.dz.FragmentBigHomeWork"
+        android:name="com.example.dz.screens.FragmentHomeworkDetails"
         android:label="fragment_big_home_work"
-        tools:layout="@layout/fragment_big_home_work" />
+        tools:layout="@layout/fragment_homework_details" />
     <fragment
         android:id="@+id/fragmentAdminDoHomeWork"
-        android:name="com.example.dz.FragmentAdminDoHomeWork"
+        android:name="com.example.dz.screens.FragmentAdminCreateHomework"
         android:label="fragment_admin_do_home_work"
-        tools:layout="@layout/fragment_admin_do_home_work" />
+        tools:layout="@layout/fragment_admin_create_homework" />
 </navigation>

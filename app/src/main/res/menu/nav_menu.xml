@@ -2,11 +2,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
-    <item android:title="Предметы">
+    <item android:title="Основное">
         <menu>
-            <item android:id="@+id/all_home_work" android:title="Все" />
-            <item android:id="@+id/math" android:title="Математика"/>
-            <item
+            <item android:id="@+id/all_home_work" android:title="Список предметов" />
+            <item android:id="@+id/archive_nav_menu" android:title="Архив"/>
+            <!--<item
                 android:id="@+id/russian_language"
                 android:title="Русский язык" />
             <item android:id="@+id/english_language" android:title="Английский язык"/>
@@ -15,11 +15,12 @@
             <item android:id="@+id/literature" android:title="Литература" />
             <item android:id="@+id/physical_culture" android:title="Физ-ра" />
             <item android:id="@+id/introduction_to_the_profession" android:title="Введение в профессию" />
-            <item android:id="@+id/history" android:title="История" />
+            <item android:id="@+id/history" android:title="История" />-->
         </menu>
     </item>
     <item android:title="Настройки">
         <menu>
+            <item android:id="@+id/profile_nav_menu" android:title="Профиль" />
             <item android:id="@+id/admin_button_nav_menu" android:title="Войти как администратор" />
         </menu>
     </item>

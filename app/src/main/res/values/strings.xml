@@ -1,5 +1,19 @@
 <resources>
-    <string name="app_name">DZ</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">TSPC Homework</string>
+    <string name="open_navigation">Открыть навигацию</string>
+    <string name="close_navigation">Закрыть навигацию</string>
+    <array name="subjects_array">
+        <item>Выберите предмет</item>
+        <item>Математика</item>
+        <item>Русский язык</item>
+        <item>Литература</item>
+        <item>Родная литература</item>
+        <item>История</item>
+        <item>Философия</item>
+        <item>ОБЖ</item>
+        <item>Информатика</item>
+        <item>ОКП</item>
+        <item>Введение в профессию</item>
+        <item>Другой</item>
+    </array>
 </resources>

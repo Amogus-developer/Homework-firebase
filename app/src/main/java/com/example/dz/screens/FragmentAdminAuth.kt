@@ -10,21 +10,22 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.dz.R
+import com.example.dz.databinding.FragmentAdminAuthBinding
 
-class FragmentAdminPassword : Fragment() {
+class FragmentAdminAuth : Fragment() {
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_admin_password, container, false)
+    private lateinit var binding: FragmentAdminAuthBinding
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
+        binding = FragmentAdminAuthBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        view.findViewById<Button>(R.id.button2).setOnClickListener {
-            if (view.findViewById<EditText>(R.id.editTextPasswordAdmin).text.toString() == "адМин123"){
-                findNavController().navigate(R.id.action_fragmentAdminPassword_to_fragment_category_admin2)
+        binding.adminAuthButton.setOnClickListener {
+            if (binding.enterPasswordAdminEditText.text.toString() == "12345678"){
+                findNavController().navigate(R.id.action_fragmentAdminPassword_to_fragmentAdminDoHomeWork)
             }
             else{
                 Toast.makeText(requireContext(), "Неверный пароль", Toast.LENGTH_SHORT).show()

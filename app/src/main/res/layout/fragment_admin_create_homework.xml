@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+        <Spinner
+            android:id="@+id/choose_subject_spinner"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:entries="@array/subjects_array"/>
+
+        <EditText
+            android:id="@+id/edTheme"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:hint="Тема"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/edExercise"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:hint="Задание" />
+
+        <EditText
+            android:id="@+id/edDate"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:inputType="date"
+            android:hint="Дата" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/bCreate"
+            android:layout_width="190dp"
+            android:layout_height="55dp"
+            app:cardCornerRadius="15dp"
+            android:layout_marginTop="15dp"
+            app:cardBackgroundColor="@color/blue_white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Добавить задание"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    />
+
+        </androidx.cardview.widget.CardView>
+
+</LinearLayout>

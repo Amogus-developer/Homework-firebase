@@ -3,7 +3,7 @@ package com.example.dz.viewModels
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-open class DataModel: ViewModel() {
+class DataModel: ViewModel() {
     val description: MutableLiveData<String> by lazy {
         MutableLiveData<String>()
     }
@@ -13,4 +13,5 @@ open class DataModel: ViewModel() {
     val adminItem: MutableLiveData<String> by lazy {
         MutableLiveData<String>()
     }
+
 }
