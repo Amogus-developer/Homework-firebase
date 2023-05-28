@@ -10,8 +10,4 @@ class DataModel: ViewModel() {
     val nameItem: MutableLiveData<String> by lazy {
         MutableLiveData<String>()
     }
-    val filter: MutableLiveData<String> by lazy {
-        MutableLiveData<String>()
-    }
-
 }
