@@ -30,7 +30,6 @@ class MainActivity : AppCompatActivity() {
         val navigationView = binding.navigationView
         navigationView.apply {
             setNavigationItemSelectedListener(navigationChangeListener)
-            setCheckedItem(R.id.all_home_work)
         }
 
         val toggle = ActionBarDrawerToggle(this, drawer, toolbar, R.string.open_navigation, R.string.close_navigation)
@@ -44,10 +43,6 @@ class MainActivity : AppCompatActivity() {
     private val navigationChangeListener = OnNavigationItemSelectedListener {item ->
         try {
             when (item.itemId) {
-                R.id.all_home_work -> {
-                    findNavController(R.id.nav_fragment_host).navigate(R.id.fragment_rasp2)
-                    true
-                }
                 R.id.archive_nav_menu -> {
                     true
                 }
@@ -87,6 +82,7 @@ class MainActivity : AppCompatActivity() {
             R.id.WorldSkills -> filter("Практикум по избранной компетенции Ворлдскиллс")
             R.id.Consultations -> filter("Консультации")
             R.id.Other -> filter("Другой")
+            R.id.Home -> findNavController(R.id.nav_fragment_host).navigate(R.id.fragment_rasp2)
         }
         return true
     }

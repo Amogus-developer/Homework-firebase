@@ -4,7 +4,6 @@
     tools:showIn="navigation_view">
     <item android:title="Основное">
         <menu>
-            <item android:id="@+id/all_home_work" android:title="Список предметов" />
             <item android:id="@+id/archive_nav_menu" android:title="Архив"/>
         </menu>
     </item>
