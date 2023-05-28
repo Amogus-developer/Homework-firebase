@@ -24,7 +24,7 @@ class FragmentAdminAuth : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.adminAuthButton.setOnClickListener {
-            if (binding.enterPasswordAdminEditText.text.toString() == "12345678"){
+            if (binding.enterPasswordAdminEditText.text.toString() == "адМин123"){
                 findNavController().navigate(R.id.action_fragmentAdminPassword_to_fragmentAdminDoHomeWork)
             }
             else{

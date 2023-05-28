@@ -3,17 +3,22 @@
     <string name="open_navigation">Открыть навигацию</string>
     <string name="close_navigation">Закрыть навигацию</string>
     <array name="subjects_array">
-        <item>Выберите предмет</item>
-        <item>Математика</item>
         <item>Русский язык</item>
         <item>Литература</item>
-        <item>Родная литература</item>
+        <item>Математика</item>
         <item>История</item>
-        <item>Философия</item>
-        <item>ОБЖ</item>
+        <item>Физическая культура</item>
+        <item>Основы безопасности жизнедеятельности</item>
+        <item>Астрономия</item>
+        <item>Иностранный язык</item>
+        <item>Родная литература</item>
         <item>Информатика</item>
-        <item>ОКП</item>
-        <item>Введение в профессию</item>
+        <item>Физика</item>
+        <item>Человек и общество</item>
+        <item>Социально-значимая деятельность</item>
+        <item>Общие компетенции профессионала</item>
+        <item>Практикум по избранной компетенции Ворлдскиллс</item>
+        <item>Консультации</item>
         <item>Другой</item>
     </array>
 </resources>

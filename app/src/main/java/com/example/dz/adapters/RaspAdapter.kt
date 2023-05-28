@@ -38,6 +38,9 @@ class RaspAdapter(private val listRead: ArrayList<Homework>,
     override fun getItemCount(): Int {
         return listRead.size
     }
+    fun clear(){
+        listRead.clear()
+    }
 
     interface SubjectClickListener {
         fun onClick(model: Homework)

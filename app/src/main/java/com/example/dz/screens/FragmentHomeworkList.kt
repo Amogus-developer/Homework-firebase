@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.activityViewModels
+import androidx.lifecycle.LifecycleOwner
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -18,8 +19,8 @@ import com.example.dz.databinding.FragmentHomeworkListBinding
 import com.example.dz.firebase.model.Homework
 import com.example.dz.viewModels.DataModel
 import com.google.firebase.database.*
-
-
+import com.google.firebase.database.ktx.getValue
+var filter = "Всё"
 class FragmentHomeworkList : Fragment() {
 
     private lateinit var mBase: DatabaseReference
@@ -47,10 +48,10 @@ class FragmentHomeworkList : Fragment() {
             val homeworkList: ArrayList<Homework> = arrayListOf()
             for(homeworkSnapshot in snapshot.children){
                 val homework = homeworkSnapshot.getValue(Homework::class.java)!!
-                homeworkList.add(homework)
+                if(homework.name == filter || filter == "Всё") homeworkList.add(homework)
+                else{continue}
             }
             val rvAdapter = RaspAdapter(homeworkList, subjectClickListener)
-
             binding.homeworkRv.apply {
                 adapter = rvAdapter
                 layoutManager = LinearLayoutManager(context)
@@ -60,14 +61,6 @@ class FragmentHomeworkList : Fragment() {
         override fun onCancelled(error: DatabaseError) {}
 
     }
-
-    /*fun setOnItemClick(position: Int) {
-        dataModel.nameItem.value = listName[position]
-        dataModel.description.value = listDescription[position]
-
-        findNavController().navigate(R.id.action_fragment_rasp2_to_fragmentBigHomeWork)
-    }*/
-
     private val subjectClickListener = object : RaspAdapter.SubjectClickListener {
         override fun onClick(model: Homework) {
             Log.d(Constants.LOG_KEY, model.toString())

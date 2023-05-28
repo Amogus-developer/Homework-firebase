@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/All"
+            android:title="Всё"
+            app:actionViewClass="android.widget.SearchView" />
+        <item
+            android:id="@+id/Russian"
+            android:title="Русский язык"
+            app:actionViewClass="android.widget.SearchView" />
+        <item
+            android:id="@+id/Literature"
+            android:title="Литература"
+            app:actionViewClass="android.widget.SearchView" />
+        <item
+            android:id="@+id/Math"
+            android:title="Математика"
+            app:actionViewClass="android.widget.SearchView" />
+        <item
+            android:id="@+id/History"
+            android:title="История"
+            app:actionViewClass="android.widget.SearchView" />
+        <item
+            android:id="@+id/PhysicalCulture"
+            android:title="Физическая культура"
+            app:actionViewClass="android.widget.SearchView" />
+        <item
+            android:id="@+id/OBJ"
+            android:title="ОБЖ"
+            app:actionViewClass="android.widget.SearchView" />
+        <item
+            android:id="@+id/Astronomy"
+            android:title="Астрономия"
+            app:actionViewClass="android.widget.SearchView" />
+        <item
+            android:id="@+id/English"
+            android:title="Иностранный язык"
+            app:actionViewClass="android.widget.SearchView" />
+        <item
+            android:id="@+id/RLiterature"
+            android:title="Родная литература"
+            app:actionViewClass="android.widget.SearchView" />
+        <item
+            android:id="@+id/Informatics"
+            android:title="Информатика"
+            app:actionViewClass="android.widget.SearchView" />
+        <item
+            android:id="@+id/Physics"
+            android:title="Физика"
+            app:actionViewClass="android.widget.SearchView" />
+        <item
+            android:id="@+id/HumanAndSociety"
+            android:title="Человек и общество"
+            app:actionViewClass="android.widget.SearchView" />
+        <item
+            android:id="@+id/SZD"
+            android:title="СЗД"
+            app:actionViewClass="android.widget.SearchView" />
+        <item
+            android:id="@+id/GCP"
+            android:title="ОКП"
+            app:actionViewClass="android.widget.SearchView" />
+        <item
+            android:id="@+id/WorldSkills"
+            android:title="Практикум по Ворлдскиллс"
+            app:actionViewClass="android.widget.SearchView" />
+        <item
+            android:id="@+id/Consultations"
+            android:title="Консультации"
+            app:actionViewClass="android.widget.SearchView" />
+        <item
+            android:id="@+id/Other"
+            android:title="Другой"
+            app:actionViewClass="android.widget.SearchView" />
+    </group>
+</menu>
